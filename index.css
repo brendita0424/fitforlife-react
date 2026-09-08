@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Variables de Color principales */
+  --primary-color: #121358;   /* Azul Oscuro Profundo */
+  --secondary-color: #2F578A; /* Azul Pavo / Celeste Oscuro */
+  --color-accent: #36ADA3;    /* Menta / Turquesa brillante */
+  --color-accent-light: #52ded3;
+  --color-accent-glow: rgba(54, 173, 163, 0.35);
+
+  /* Fondos y superficies */
+  --bg-dark: #0a0b27;
+  --bg-darker: #060719;
+  --bg-card: rgba(47, 87, 138, 0.12);
+  --bg-card-hover: rgba(47, 87, 138, 0.22);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(54, 173, 163, 0.4);
+
+  /* Texto */
+  --text-light: #ffffff;
+  --text-dim: #b0c4de;
+  --text-muted: #7c94b3;
+
+  /* Navbar */
+  --navbar-height: 76px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  margin: 0;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+}
+
+/* Scrollbar moderno y estilizado */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(47, 87, 138, 0.6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}

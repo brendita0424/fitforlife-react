@@ -1,0 +1,81 @@
+.container {
+  background-color: #111827;
+  color: #d1d5db;
+  padding: 2rem 1rem;
+  border-top: 1px solid #1f2937;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.brand {
+  text-align: center;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.link {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+.bottom {
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  padding-top: 1rem;
+  border-top: 1px solid #1f2937;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Adaptativo para pantallas medianas y grandes */
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .brand {
+    text-align: left;
+  }
+}
